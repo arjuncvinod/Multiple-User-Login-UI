@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    transform: translateY(30%);
+}
+.login-box{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0px 0px 8px rgb(166, 164, 164);
+    border-radius: 10px;
+}
+.login-type-header{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(154, 5, 177);
+    margin: 10px;
+    margin-top: 15%;
+    cursor:default;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-top: 0;
+}
+input[type="button"]{
+    background-color:rgb(154, 5, 177);
+    height: 30px;
+    border-radius:14px;
+    color:white ;
+    border: none;
+    margin: 0px;
+    transition:.4s;
+    cursor: pointer;  
+}
+input[type="button"]:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+input.active{
+    background-color: white;
+    color: rgb(154, 5, 177);
+    height: 30px;
+    border-radius:14px;
+    border: none;
+    margin: 0px;
+    transition:.4s;
+    cursor: pointer;
+}
+
+
+.button-border{
+    display: inline-block;
+    border: 3px solid rgb(154, 5, 177);
+    border-radius: 40px;
+    background-color:rgb(154, 5, 177) ;
+    
+}
+:focus-visible{
+    outline: none;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin-top:5%
+
+}
+.form{
+    margin-top:0;
+    display: grid;
+    
+}
+.submit-container{
+    display: flex;
+    justify-content: center;
+}
+#text-box{
+    background: transparent;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    width: 250px;
+    outline: none;
+    border-color:rgb(166, 164, 164);
+    color: rgb(154, 5, 177) ;
+    padding-left: 1px;
+    transition: .5s;
+    font-size: 14px;
+    transition: .5s ease;
+    }
+#text-box:focus{
+    border-color:rgb(154, 5, 177) ;
+    width: 260px;
+
+}
+#submit-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 14px;
+    background-color:rgb(154, 5, 177) ;
+    color: white;
+    border: none;
+    transition: .5s;
+    margin-top: 7%;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+#submit-button:hover{
+    box-shadow: 0px 2px 10px rgb(166, 164, 164) ;
+    background-color:rgba(154, 5, 177, 0.901) ;
+    transform: scale(1.05);
+}
+ul {
+    display: flex;
+    padding-inline-start: 0px;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+
+}

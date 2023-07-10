@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="form-style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="login-box">
+                <div class="login-type"> 
+                    <p class="login-type-header">
+                        Login As
+                    </p>
+                        <div class="form-container">
+                            <form action="form.php" method="post" class="form">
+                                <p>
+                                    <div class="buttons">
+                                        <div class="button-border">
+                                        
+                                        <ul> 
+                                        <li><input type="button" value="Student" name="student" class="active" ></li>
+                                        <li><input type="button" value="Parent" name="parent"></li>
+                                        <li><input type="button" value="Teacher" name="teacher"></li>
+                                        <li><input type="button" value="Admin" name="admin"></li>
+                                    </ul>
+                                    <script type="text/javascript">
+                                      let li = document.getElementsByTagName("input");
+                            
+                                      for(let i=0; i < li.length; i++)
+                                      {
+                                        li[i].onclick = e=>{
+                                            let n=0;
+                                            while(n < li.length)
+                                            {
+                                                li[n++].className = '';
+                                            }
+                                            e.target.className = 'active'
+                                        }
+                                      }
+                                      $('button').click(function(){
+                                        $(this).addClass('active').sibling().removeClass('active');
+                                      })
+                                    </script>
+                                </div>
+                                    </div>
+                                </p>
+                                <p><input type="text" placeholder="Name" id="text-box" name="name" required></p>
+                                <p><input type="password" placeholder="Password" id="text-box" name="password" required></p>
+                                <p class="submit-container"><input type="submit" value="login" id="submit-button"></p>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <?php
+//echo("$_REQUEST['student']");
+ echo  "$_REQUEST['parent']";
+ //echo("$_REQUEST['teacher']");
+ //echo("$_REQUEST['admin']");
+ echo "$_REQUEST['name']";
+ echo "$_REQUEST['password']";
+?>
+    </body>
+</html>
